@@ -11,5 +11,6 @@ ENV BASE_DIR=/agent \
 WORKDIR /agent/ngrinder-agent
 RUN mkdir -p $NGRINDER_AGENT_HOME
 COPY ngrinder-agent /agent/ngrinder-agent
+COPY ngrinder-agent/lib /agent/ngrinder-agent/lib
 
 CMD ["./run_agent.sh"]
