@@ -35,21 +35,19 @@ change configuration for agent.conf file in __agent.conf
 sudo docker run -d \
   -v $(pwd)/__agent.conf:/agent/ngrinder-agent/__agent.conf\
   --name agent01 \
-  --add-host skgcvrd.kubepia.net:10.22.18.125 \
-  --add-host www.skgcvrd.kubepia.net:10.22.18.125 \
   skicr.azurecr.io/perf-ngrinder/agent:3.5.3
 
 sudo docker run -d \
   -v $(pwd)/__agent.conf:/agent/ngrinder-agent/__agent.conf\
   --name agent02 \
-  --add-host skgcvrd.kubepia.net:10.22.18.125 \
-  --add-host www.skgcvrd.kubepia.net:10.22.18.125 \
   skicr.azurecr.io/perf-ngrinder/agent:3.5.3
 
 sudo docker run -d \
   -v $(pwd)/__agent.conf:/agent/ngrinder-agent/__agent.conf\
   --name agent03 \
-  --add-host skgcvrd.kubepia.net:10.22.18.125 \
-  --add-host www.skgcvrd.kubepia.net:10.22.18.125 \
   skicr.azurecr.io/perf-ngrinder/agent:3.5.3
 ```
+
+## Target IP 변경방법
+
+![](img/2021-01-27-12-39-25.png)
